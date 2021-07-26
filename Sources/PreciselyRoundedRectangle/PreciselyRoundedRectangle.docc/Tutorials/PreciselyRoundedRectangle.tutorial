@@ -1,0 +1,15 @@
+@Tutorials(name: "Precisely Rounded Rectangle") {
+    @Intro(title: "Control Corner Roundings with Surgical Precision") {
+        Rounded rectangles don't always need to have uniform corners. The ``PreciselyRoundedRectangle`` `Shape` allows you to finely control each. 
+        
+        @Image(source: tutorial_placeholder-image.png, alt: "Rectangle Shape Example")
+    }
+    
+    @Chapter(name: "Essentials") {
+        Learn how to create custom rectangles with the ``PreciselyRoundedRectangle`` `Shape` type and ``PreciselyRoundedRectangle/CornerRadiusMap`` settings.
+        
+        @Image(source: tutorial_placeholder-image.png, alt: "Rectangle Shape Example")
+        
+        @TutorialReference(tutorial: "doc:Creating-Shapes")
+    }
+}

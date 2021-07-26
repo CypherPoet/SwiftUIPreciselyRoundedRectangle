@@ -1,0 +1,24 @@
+@Tutorial(time: 0) {
+
+    @Intro(title: "Creating Rectangles with Precision Rounding") {
+        @Image(source: tutorial_placeholder-image.png, alt: "Rectangle Shape Example")
+    }
+    
+    @Section(title: "Initializing with `RectangleCorners`") {
+
+        @ContentAndMedia() {-->
+            @Image(source: tutorial_placeholder-image.png, alt: "Rectangle Shape Example")
+        }
+        
+        @Steps {
+            @Step {
+                Initialize a ``PreciselyRoundedRectangle`` shape inside of a SwiftUI `View` body. The initializer takes
+                a `CornerRadiusMap`, with information about each corner measurement.
+                
+                @Code(name: "InitializingWithCornerRadiusMap.swift", file: 01-init-with-corners.swift) {
+                    @Image(source: 01-preview-init-with-cornerradiusmap.png, alt: "A rectangle created with CornerRadiusMap settings")
+                }
+            }
+        }
+    }
+}

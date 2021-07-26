@@ -1,4 +1,4 @@
-# MyLibrary
+# PreciselyRoundedRectangle
 
 <!-- Header Logo -->
 
@@ -11,13 +11,13 @@
 
 <p>
     <img src="https://img.shields.io/badge/Swift-5.5-F06C33.svg" />
-    <img src="https://img.shields.io/badge/iOS-15.0+-865EFC.svg" />
-    <img src="https://img.shields.io/badge/iPadOS-15.0+-F65EFC.svg" />
-    <img src="https://img.shields.io/badge/macOS-12.0+-179AC8.svg" />
-    <img src="https://img.shields.io/badge/tvOS-15.0+-41465B.svg" />
-    <img src="https://img.shields.io/badge/watchOS-8.0+-1FD67A.svg" />
+    <img src="https://img.shields.io/badge/iOS-14.0+-865EFC.svg" />
+    <img src="https://img.shields.io/badge/iPadOS-14.0+-F65EFC.svg" />
+    <img src="https://img.shields.io/badge/macOS-11.0+-179AC8.svg" />
+    <img src="https://img.shields.io/badge/tvOS-14.0+-41465B.svg" />
+    <img src="https://img.shields.io/badge/watchOS-7.0+-1FD67A.svg" />
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
-    <img src="https://github.com/CypherPoet/MyLibrary/workflows/Build%20&%20Test/badge.svg" />
+    <img src="https://github.com/CypherPoet/PreciselyRoundedRectangle/workflows/Build%20&%20Test/badge.svg" />
     <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" />
     </a>
@@ -29,31 +29,29 @@
 
 <p align="center">
 
-_[[ A brief synopsis of this library ]]._
+_An animatable SwiftUI rectangle shape with fine-grained corner rounding configuration._
 
 <p />
-
-
-[[ Optionally, a longer description of this package. ]]
 
 
 ## Installation
 
 ### Xcode Projects
 
-Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/MyLibrary`.
+Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/PreciselyRoundedRectangle`.
 
 
 ### Swift Package Manager Projects
 
-You can add `MyLibrary` as a package dependency in your `Package.swift` file:
+You can add `SwiftUIPreciselyRoundedRectangle` as a package dependency in your `Package.swift` file:
 
 ```swift
 let package = Package(
     //...
     dependencies: [
         .package(
-            url: "https://github.com/CypherPoet/MyLibrary",
+            name: "SwiftUIPreciselyRoundedRectangle",
+            url: "https://github.com/CypherPoet/PreciselyRoundedRectangle",
             .upToNextMinor(from: "0.1.0")
         ),
     ],
@@ -61,14 +59,14 @@ let package = Package(
 )
 ```
 
-From there, refer to `MyLibrary` as a "target dependency" in any of _your_ package's targets that need it.
+From there, refer to the `PreciselyRoundedRectangle` "product" delivered by the `SwiftUIPreciselyRoundedRectangle` "package" inside of any of your project's target dependencies:
 
 ```swift
 targets: [
     .target(
         name: "YourLibrary",
         dependencies: [
-          "MyLibrary",
+            .product(name: "PreciselyRoundedRectangle", package: "SwiftUIPreciselyRoundedRectangle"),
         ],
         ...
     ),
@@ -76,22 +74,22 @@ targets: [
 ]
 ```
 
-Then simply `import MyLibrary` wherever you’d like to use it.
+Then simply `import PreciselyRoundedRectangle` wherever you’d like to use it.
 
 
-## Usage
+<!-- ## Usage
 
 
 
 ## 🗺 Roadmap
 
 - World Domination
-
+ -->
 
 
 ## Contributing
 
-Contributions to `MyLibrary` are most welcome. Check out some of the [issue templates](./.github/ISSUE_TEMPLATE/) for more info.
+Contributions to `PreciselyRoundedRectangle` are most welcome. Check out some of the [issue templates](./.github/ISSUE_TEMPLATE/) for more info.
 
 
 
@@ -104,18 +102,11 @@ Contributions to `MyLibrary` are most welcome. Check out some of the [issue temp
 
 ### 📜 Creating & Building Documentation
 
-Documentation is built with [Xcode's DocC](https://developer.apple.com/documentation/docc). More details are forthcoming here -- but for now,  see [Apple's guidance on how to build, run, and create DocC content](https://developer.apple.com/documentation/docc/api-reference-syntax).
+Documentation is built with [Xcode's DocC](https://developer.apple.com/documentation/docc). See [Apple's guidance on how to build, run, and create DocC content](https://developer.apple.com/documentation/docc/api-reference-syntax).
 
+For now, the best way to view the docs is to open the project in Xcode and run the `Build Documentation` command. At some point in the future, I'm hoping to leverage the tooling the develops for generating/hosting DocC documentation. (Please feel free to let me know if you have any ideas or tooling recommendations around this 🙂).
 
 
 ## 🏷 License
 
-`MyLibrary` is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.
-
-
-## Steps For Using This Template
-
-- [ ] Rename instances of `MyLibrary` to the library's product name.
-- [ ] Rename instances of `MyLibraryPackageName` to the library's Swift package name.
-- [ ] Update supported platforms as appropriate.
-- [ ] Delete this section.
+`PreciselyRoundedRectangle` is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.
