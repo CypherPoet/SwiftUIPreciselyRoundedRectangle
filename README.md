@@ -29,7 +29,7 @@
 
 <p align="center">
 
-_An animatable SwiftUI rectangle shape with fine-grained corner rounding configuration._
+_An animatable SwiftUI rectangle shape with support for individual corner rounding measurements._
 
 <p />
 
