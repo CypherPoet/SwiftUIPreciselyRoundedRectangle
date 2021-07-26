@@ -12,4 +12,5 @@ Rounded rectangles don't always need to have uniform corners. The ``PreciselyRou
 ### Essentials
 
 - <doc:/tutorials/PreciselyRoundedRectangle>
+- <doc:/ViewExtensionsForClipping>
 - ``PreciselyRoundedRectangle/CornerRadiusMap``
