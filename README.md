@@ -1,4 +1,4 @@
-# PreciselyRoundedRectangle
+# SwiftUI Precisely Rounded Rectangle
 
 <!-- Header Logo -->
 
@@ -66,7 +66,10 @@ targets: [
     .target(
         name: "YourLibrary",
         dependencies: [
-            .product(name: "PreciselyRoundedRectangle", package: "SwiftUIPreciselyRoundedRectangle"),
+            .product(
+                name: "PreciselyRoundedRectangle",
+                package: "SwiftUIPreciselyRoundedRectangle"
+            ),
         ],
         ...
     ),
